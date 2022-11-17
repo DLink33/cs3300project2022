@@ -14,4 +14,5 @@ RSpec.describe ProjectsController, type: :controller do
             get :show, params: { id: project }
             expect(response).to be_successful
         end
-    en
+    end
+end
