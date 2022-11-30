@@ -11,7 +11,7 @@
   <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <div class="container-fluid">
-      <a class="navbar-brand" href="https://www.google.com/">Home</a>
+      <a class="navbar-brand" href="/projects">Home</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,25 +30,44 @@
     </nav>
 
     <div> 
-      <h1 class="display-3 text-center">David's Portfolio</h1> 
-      <p> My name is David Linkowski.  I am a current UCCS student seeking a BS in Computer Science.  Details about the program can be found here: <a href="https://eas.uccs.edu/cs/academics/undergraduate-programs/bachelor-of-science-in-computer-science" target="_blank">UCCS Bachelor of Sience in Computer Science</a></p>
-      <p>I am looking to graduate in the spring of 2023.  I am hoping to start a career in back-end software development by summer 2023.</p>
-      <div style="color:red">
-        <p>HERE I WOULD PLACE ELEMENTS FROM MY RESUME INCLUDING:
-          <UL>
-            <LI>WORK EXPERIENCE</LI>
-            <LI>RELEVANT PROJECT EXPEREINCE</LI>
-            <LI>SOFT SKILLS</LI>
-            <LI>SOFT SKILLS</LI>
-            <LI>RELATIVE TECHNICAL SKILLS (LANGUAGES ETC.)</LI>
-          </UL>
-        </p> 
-      </div>
+      <h1 class="display-3 text-center">David's Portfolio</h1>
+      <div style="margin-left:70px">
+        <p> My name is David Linkowski.  I am a current UCCS student seeking a BS in Computer Science.  Details about the program can be found here: <a href="https://eas.uccs.edu/cs/academics/undergraduate-programs/bachelor-of-science-in-computer-science" target="_blank">UCCS Bachelor of Sience in Computer Science</a></p>
+        <p>I am looking to graduate in the spring of 2023.  I am hoping to start a career in back-end software development by summer 2023.</p>
+        <div style="color:black">
+          <p>Technical Skills:
+            <UL>
+              <LI>placeholder</LI>
+              <LI>placeholder</LI>
+              <LI>placeholder</LI>
+              <LI>placeholder</LI>
+              <LI>placeholder</LI>
+            </UL>
+          </p>
+          <p>Work Experience:
+            <UL>
+              <LI>placeholder</LI>
+              <LI>placeholder</LI>
+              <LI>placeholder</LI>
+              <LI>placeholder</LI>
+              <LI>placeholder</LI>
+            </UL>
+          </p>          
+          <p>Below are a highlight of some of my projects that I have worked on as both part of my curriculum at UCCS and as part of personal projects.</p>
+        </div>
 
-      <p>Below are a highlight of some of my projects that I have worked on as both part of my curriculum at UCCS and as part of personal projects.</p>
+        <% if user_signed_in? %>
+          <a href="/projects/new"> New Project </a>
+        <% else %>
+          <p><a href="/projects/new"> New Project [not signed in] </a></p>
+          <p><a href="/projects/show"> All Projects [not signed in] </a></p>
+        <% end %>
+
+      </div>
     </div>
 
-    <div class="container mt-5">
+
+    <div style="margin-bottom:100px" class="container mt-5">
       <div class="row">
 
         <div class="col-sm-4">
