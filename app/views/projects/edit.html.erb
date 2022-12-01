@@ -1,3 +1,40 @@
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js%22%3E"></script>
+    <title>CS3300 Portfolio Project</title>
+  </head>
+
+  <body>
+  
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="/projects">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Account</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Sign In</a></li>
+            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+          </ul>
+        </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+    <div style="margin-left:50px" >
+      <%# <p><h1>New project</h1> %>
+      <br>
+      <img src="https://cdn0.iconfinder.com/data/icons/document-file-types/512/new-512.png" alt="New Project" width="75"></p>
+    </div>
+
 <h1>Editing project</h1>
 
 <%= render "form", project: @project %>
