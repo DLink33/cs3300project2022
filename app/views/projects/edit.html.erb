@@ -34,18 +34,18 @@
     <div style="margin-left:50px" >
         <%# <p><h1>Edit Project</h1> %>
         <br>
-        <img src="https://th.bing.com/th/id/OIP.xcMgP-tZD13_j4Xh6hmirgHaHw?pid=ImgDet&rs=1" alt="New Project" width="75"></p>
+        <img src="https://th.bing.com/th/id/OIP.xcMgP-tZD13_j4Xh6hmirgHaHw?pid=ImgDet&rs=1" alt="Edit Project" width="75"></p>
 
 
-      <h1>Editing project</h1>
+      <h1>Edit Project</h1>
 
       <%= render "form", project: @project %>
 
       <br>
 
-      <div>
-        <%= link_to "Show this project", @project %> |
-        <%= link_to "Back to projects", projects_path %>
+      <div >
+        <a href="/projects"><button type="button" class="btn btn-outline-danger"><-Back</button></a> |
+        <%= link_to "Show this project", @project %>
       </div>
     </div>
   </body>

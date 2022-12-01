@@ -34,11 +34,19 @@
 
   <p style="color: green"><%= notice %></p>
 
+    <div style="margin-left:50px" >
+    <%# <p><h1>New project</h1> %>
+    <br>
+    <img src="https://th.bing.com/th/id/R.b7b972fa4c9c7ac4a1e57943efc48c0c?rik=W%2fX1pGctUiu87Q&pid=ImgRaw&r=0" alt="Project" width="60"></p>
+
+    <h1>Project</h1>
+
   <%= render @project %>
 
   <div>
-    <%= link_to "Edit this project", edit_project_path(@project) %> |
-    <%= link_to "Back to projects", projects_path %>
+  <a href="/projects"><button type="button" class="btn btn-outline-danger"><-Back</button></a> |
+    <%= link_to "Edit this project", edit_project_path(@project) %>
+    
 
     <%= button_to "Destroy this project", @project, method: :delete %>
   </div>

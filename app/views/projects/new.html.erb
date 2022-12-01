@@ -33,10 +33,12 @@
     </nav>
 
     <div style="margin-left:50px" >
-      <%# <p><h1>New project</h1> %>
       <br>
       <img src="https://cdn0.iconfinder.com/data/icons/document-file-types/512/new-512.png" alt="New Project" width="75"></p>
+      <h1>New Project</h1>
     </div>
+
+    
 
     <div style="margin-left:50px">
       <%= render "form", project: @project %>
@@ -46,7 +48,7 @@
     
 
     <div style="margin-left:50px">
-      <%# <%= link_to "Back to projects", projects_path %> %>
+      <%# <%= link_to "Back to projects", projects_path %>
       <br>
       <a href="/projects"><button type="button" class="btn btn-outline-danger"><-Back</button></a>
 
