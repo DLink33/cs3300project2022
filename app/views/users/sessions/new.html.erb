@@ -1,3 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <style>
+    .center {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    .flex-container {
+      height: 100%;
+      padding: 20;
+      margin: 20;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .row {
+      width: auto;
+      padding: 10px
+      margin: 10px
+      text-align: center;
+      background-color: #212529;
+    }
+
+    .flex-item {
+      background-color: #212529;
+      padding: 20px;
+      width: 20px;
+      height: 40px;
+      margin: 10px;
+      line-height: 20px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    input[type=button], input[type=submit], input[type=reset] {
+    width: 190px;
+    cursor: pointer;
+    }
+
+    .wrapper-options {
+      width: 190px;
+    }
+  
+    .wrapper {
+      position: absolute;
+      width: 100%;
+      top: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center
+    }
+
+    nav {
+      border: 5px solid white;
+      width: 100%;
+    }
+    
+  </style>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js%22%3E"></script>
+    <title>CS3300 Portfolio Project</title>
+  </head>
+  
+  <body>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="/projects">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Account</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Sign In</a></li>
+            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+          </ul>
+        </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -23,4 +119,9 @@
   </div>
 <% end %>
 
-<%= render "users/shared/links" %>
+<div class="wrapper-options">
+  <%= render "users/shared/links" %>
+</div>
+</div>
+</body>
+</html>
