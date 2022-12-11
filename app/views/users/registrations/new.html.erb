@@ -41,10 +41,13 @@
     input[type=button], input[type=submit], input[type=reset] {
     width: 190px;
     cursor: pointer;
+    margin-top: 5px;
     }
 
     .wrapper-options {
       width: 190px;
+      top: 5px;
+      text-align: center;
     }
   
     .wrapper {
@@ -85,8 +88,8 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Account</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Sign In</a></li>
-            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+            <li><a class="dropdown-item" href="/users/sessions/new">Log In</a></li>
+            <li><a class="dropdown-item" href="/users/registrations/new">Sign Up</a></li>
           </ul>
         </li>
         </ul>
@@ -117,12 +120,12 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="actions wrapper-options">
+    <%= f.submit "Sign Up" %>
   </div>
 <% end %>
 
-<div class="wrapper-options"
+<div class="wrapper-options">
   <%= render "users/shared/links" %>
 </div>
     </div>
